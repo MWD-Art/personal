@@ -4,8 +4,27 @@ $dark: #1a1b2d;
 $light: #595992;
 $white: #f6edee;
 $font: #8181b1;
+$oragne: #fbda61;
+$pink: #ff5acd;
+
+:root {
+  --color: rebeccapurple;
+  --gray: #27273f;
+  --dark: #1a1b2d;
+  --light: #595992;
+  --white: #f6edee;
+  --font: #8181b1;
+  --oragne: #fbda61;
+  --pink: #ff5acd;
+}
 
 @import 'vendor/pico-bootstrap';
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
 
 body {
   --nav-height: 5rem;

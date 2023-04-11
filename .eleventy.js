@@ -12,6 +12,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/assets/');
 
+  eleventyConfig.addLayoutAlias('base', 'base.njk');
+  eleventyConfig.addLayoutAlias('post', 'post.njk');
+  eleventyConfig.addLayoutAlias('portfolio', 'portfolio.njk');
+
   return {
     dir: {
       input: 'src',

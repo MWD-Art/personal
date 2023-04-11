@@ -4,9 +4,16 @@
   left: 0;
   background: $dark;
 
-  a svg {
-    height: 2rem;
-    width: auto;
+  a.topbar__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+    svg {
+      height: 2rem;
+      width: auto;
+    }
   }
 }
 
