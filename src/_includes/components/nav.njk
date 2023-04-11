@@ -1,0 +1,21 @@
+{% set currentUrl = page.url %}
+
+<nav>
+  <ul role="list">
+    <li>
+      <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
+    </li>
+
+    {% for link in pages %}
+    {% if link.main %}
+    <li>
+      <a
+        {% if currentUrl === link.url %}aria-current="page"{% endif %}
+        href="{{ link.url }}">
+          {{ link.name }}
+      </a>
+    </li>
+    {% endif %}
+    {%- endfor %}
+  </ul>
+</nav>

@@ -6,10 +6,8 @@
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
-<body>
-	<header>
-		<h1>{{ title }}</h1>
-	</header>
+<body class="page--{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
+	{% include 'components/header.njk' %}
 	<main>
 	{{ content | safe }}
 	</main>

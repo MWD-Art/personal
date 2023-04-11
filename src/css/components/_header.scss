@@ -1,0 +1,16 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: $dark;
+
+  a svg {
+    height: 2rem;
+    width: auto;
+  }
+}
+
+header {
+  background-color: $dark;
+  padding-block: 3rem;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Home",
+    "url": "/",
+    "slug": "{{ page.fileSLug }}",
+    "main": false
+  },
+  {
+    "name": "About",
+    "url": "/about",
+    "slug": "{{ page.fileSLug }}",
+    "main": true
+  },
+  {
+    "name": "Service",
+    "url": "/servie",
+    "slug": "{{ page.fileSLug }}",
+    "main": true
+  },
+  {
+    "name": "Portfolio",
+    "url": "/portfolio",
+    "slug": "{{ page.fileSLug }}",
+    "main": true
+  },
+  {
+    "name": "Blog",
+    "url": "/blo",
+    "slug": "{{ page.fileSLug }}",
+    "main": true
+  },
+  {
+    "name": "Imprint",
+    "url": "/imprint",
+    "slug": "{{ page.fileSLug }}",
+    "main": false
+  },
+  {
+    "name": "Privacy policy",
+    "url": "/privacy-policy",
+    "slug": "{{ page.fileSLug }}",
+    "main": false
+  }
+]

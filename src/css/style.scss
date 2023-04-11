@@ -1,8 +1,27 @@
 $color: rebeccapurple;
+$gray: #27273f;
+$dark: #1a1b2d;
+$light: #595992;
+$white: #f6edee;
+$font: #8181b1;
+
+@import 'vendor/pico-bootstrap';
 
 body {
+  --nav-height: 5rem;
   font-family: system-ui;
-  background-color: #f9f9f9;
+  background-color: $gray;
+  color: $font;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  .topbar {
+    height: var(--nav-height);
+  }
+
+  header {
+    padding-top: calc(var(--nav-height) + 2rem);
+  }
 }
 
 h1 {
@@ -10,3 +29,5 @@ h1 {
   width: fit-content;
   margin-inline: auto;
 }
+
+@import 'components/header';
