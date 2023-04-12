@@ -25,7 +25,7 @@
   },
   {
     "name": "Blog",
-    "url": "/blo",
+    "url": "/blog",
     "slug": "{{ page.fileSLug }}",
     "main": true
   },
@@ -33,12 +33,14 @@
     "name": "Imprint",
     "url": "/imprint",
     "slug": "{{ page.fileSLug }}",
-    "main": false
+    "main": false,
+    "legal": true
   },
   {
     "name": "Privacy policy",
     "url": "/privacy-policy",
     "slug": "{{ page.fileSLug }}",
-    "main": false
+    "main": false,
+    "legal": true
   }
 ]

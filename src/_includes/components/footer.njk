@@ -1,0 +1,29 @@
+<footer>
+    <div class="container">
+        <div class="row items-center justify-content-between">
+            <div class="col">
+                <p style="margin: 0;">&copy;
+                    {% year %}
+                    by Marc Weber</p>
+            </div>
+            <div class="col">
+                {% set currentUrl = page.url %}
+
+                <nav>
+                    <ul role="list">
+
+                        {% for link in pages %}
+                            {% if link.legal %}
+                                <li>
+                                    <a {% if currentUrl === link.url %} aria-current="page" {% endif %} href="{{ link.url }}">
+                                        {{ link.name }}
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {%- endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>

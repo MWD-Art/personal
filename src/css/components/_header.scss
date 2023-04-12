@@ -4,6 +4,10 @@
   left: 0;
   background: $dark;
 
+  nav {
+    justify-content: flex-end;
+  }
+
   a.topbar__logo {
     display: flex;
     justify-content: flex-start;
@@ -14,6 +18,9 @@
       height: 2rem;
       width: auto;
     }
+  }
+
+  nav {
   }
 }
 

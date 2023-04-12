@@ -4,7 +4,7 @@ $dark: #1a1b2d;
 $light: #595992;
 $white: #f6edee;
 $font: #8181b1;
-$oragne: #fbda61;
+$orange: #fbda61;
 $pink: #ff5acd;
 
 :root {
@@ -14,7 +14,7 @@ $pink: #ff5acd;
   --light: #595992;
   --white: #f6edee;
   --font: #8181b1;
-  --oragne: #fbda61;
+  --orange: #fbda61;
   --pink: #ff5acd;
 }
 
@@ -24,6 +24,16 @@ a {
   color: var(--white);
   text-decoration: none;
   font-weight: bold;
+  transition: color 250ms ease-out;
+
+  &:focus,
+  &:hover {
+    color: $orange;
+  }
+
+  &[aria-current='page'] {
+    color: $pink;
+  }
 }
 
 body {
@@ -50,3 +60,4 @@ h1 {
 }
 
 @import 'components/header';
+@import 'components/footer';

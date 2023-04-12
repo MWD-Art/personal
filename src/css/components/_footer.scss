@@ -1,0 +1,13 @@
+footer nav {
+  justify-content: flex-end;
+}
+
+footer {
+  background-color: $dark;
+  p {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+  }
+}
